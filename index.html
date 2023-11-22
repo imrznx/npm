@@ -7,7 +7,7 @@
     var imagekit = new ImageKit({
         publicKey: "public_je/X0Dlpa7ZPF77hoMM2wk6eYB0=",
         urlEndpoint: "https://ik.imagekit.io/imrzn",
-        authenticationEndpoint: "https://npmx.onrender.com/signature" // Update the authenticationEndpoint
+        authenticationEndpoint: "https://rzwn.onrender.com/signature" // Update the authenticationEndpoint
     });
 
     function upload(e) {
@@ -15,7 +15,7 @@
         var fileInput = document.getElementById("file");
         var file = fileInput.files[0];
 
-        fetch('https://npmx.onrender.com/signature') // Fetch authentication parameters
+        fetch('https://rzwn.onrender.com/signature') // Fetch authentication parameters
             .then(response => response.json())
             .then(authParams => {
                 // Use the received authentication parameters in the upload request
