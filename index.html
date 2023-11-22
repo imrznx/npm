@@ -15,7 +15,7 @@
         var fileInput = document.getElementById("file");
         var file = fileInput.files[0];
 
-        fetch('http://localhost:3000/signature') // Fetch authentication parameters
+        fetch('https://npmx.onrender.com/signature') // Fetch authentication parameters
             .then(response => response.json())
             .then(authParams => {
                 // Use the received authentication parameters in the upload request
